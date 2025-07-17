@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Happy Birthday Bhau</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Short+Stack&amp;family=Homemade+Apple&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="paper heart">
+<img src="images/okay.jpg">
+</div>
+
+<div class="paper image">
+  <p> Recreate karna hai!</p>
+  <img src="images/hangover.jpg" alt="">
+</div>
+
+<div class="paper image">
+  <p>Is baar pakka body ban jayegi!</p>
+  <img src="images/gym.jpg" />
+</div>
+
+
+<div class="paper image">
+  <p class="p1">Jai Baba ki 🙏</p>
+  <p> <span style="color: red !important;"><img src="images/image.png"></span></p>
+</div>
+
+<div class="paper image">
+  <p>Dosti important nahi,</p>
+  <p>tere jaise dost important h 🫶</p>
+  <img src="images/car.jpg" />
+</div>
+
+
+
+<div class="paper red">
+  <p class="p2"> Tu vo dost hai <br></p>
+  <p class="p2">jo bina kaam ke bhi <br>busy hota hai 😂</p>
+</div>
+ 
+
+<div class="paper red">
+  <p class="p1">God bless veere ❤️</p>
+  <p class="p1">humesha khush rahiyo! </p>
+</div>
+
+<div class="paper red">
+  <p class="p1">Happy Birthday Vau 🎂</p>
+  <p class="p1">bohut saari shubhkamnaayein!</p>
+</div>
+
+<div class="paper" style="padding: 50px 100px;">
+<p class="p1">Drag the papers to move!</p>
+</div>
+<!-- partial -->
+<button id="play-audio" style="position: fixed; top: 20px; right: 20px; z-index: 999;">🎵 Play Music</button>
+<audio id="birthday-audio" loop>
+  <source src="audio/birthday.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+
+<script>
+  if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+    const script = document.createElement('script');
+    script.src = './mobile.js';
+    document.body.appendChild(script);
+  }
+  else{
+    const script = document.createElement('script');
+    script.src = './script.js';
+    document.body.appendChild(script);
+  }
+</script>
+<script>
+  document.getElementById("play-audio").addEventListener("click", function () {
+    document.getElementById("birthday-audio").play();
+    this.style.display = "none"; // Hide button after playing
+  });
+</script>
+
+
+</body>
+</html>
